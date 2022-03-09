@@ -19,7 +19,6 @@ function KinkForm() {
         { key: 'No', value: 'No' },
       ]
     return (
-        <div>
             <Formik
                 initialValues={{
                     selectedOption: Options.Option1.toString()
@@ -40,29 +39,16 @@ function KinkForm() {
                             options={radioOptions}
                             />
                         </FormGroup>
-                        {/* <FormGroup title="Bodies">
+                        <FormGroup title="Clothing" column1="Self">
                             <RadioButtons
-                            label='Skinny'
-                            name='Skinny'
-                            options={radioOptions}
-                            />
-                            <RadioButtons
-                            label='Chubby'
-                            name='Chubby'
-                            options={radioOptions}
-                            />
-                        </FormGroup> */}
-                        <FormGroup title="Clothing">
-                            <RadioButtons
-                            label='Radio topic'
-                            name='radioOption'
+                            label='Clothed Sex'
+                            name='Clothed Sex'
                             options={radioOptions}
                             />
                         </FormGroup>
                     </Form>
                 )}
             </Formik>
-        </div>
     )
 }
 

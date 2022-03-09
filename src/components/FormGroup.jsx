@@ -4,12 +4,12 @@ function FormGroup(props) {
     return (
         <div>
             <h3>{props.title}</h3>
-            <table>
-                <thead>
+            <table >
+                <thead className="tbl-header">
                     <th>{props.column1}</th>
                     {props.column2 ? <th>{props.column1}</th> : undefined}
                 </thead>
-                <tbody>
+                <tbody className="tbl-content">
                     {props.children}
                 </tbody>
             </table>

@@ -6,12 +6,12 @@ function RadioButtons (props) {
   const { label, name, options, ...rest } = props
   return (
     <div className='form-control'>
-      <label>{label}</label>
+      <label className="radio-group-label">{label}</label>
       <Field name={name} >
         {({ field }) => {
           return options.map(option => {
             return (
-              <React.Fragment key={option.key}>
+              <React.Fragment key={option.key} className="radio-button">
                 <input
                   type='radio'
                   id={option.value}
