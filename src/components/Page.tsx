@@ -1,11 +1,11 @@
 import React from 'react'
-import Form from './Form'
+import KinkForm from './KinkForm'
 
 function Page() {
     return (
         <div>
             <h1>My Kinks</h1>
-            <Form />            
+            <KinkForm />            
         </div>
     )
 }
